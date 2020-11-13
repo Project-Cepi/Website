@@ -37,7 +37,7 @@
 </style>
 
 <svelte:head>
-	<title>Sapper project template</title>
+	<title>Cepi</title>
 </svelte:head>
 
 <h1>Great success!</h1>
@@ -47,4 +47,4 @@
 	<figcaption>Have fun with Sapper!</figcaption>
 </figure>
 
-<p><strong>Try editing this file (src/routes/index.svelte) to test live reloading.</strong></p>
+<p><strong>Welcome to Cepi!</strong></p>
