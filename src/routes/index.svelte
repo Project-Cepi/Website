@@ -7,14 +7,14 @@
 		text-align: center;
 		margin: 0 auto;
 	}
-
+	*/
 	h1 {
 		font-size: 2.8em;
 		text-transform: uppercase;
 		font-weight: 700;
 		margin: 0 0 0.5em 0;
 	}
-
+	/*
 	figure {
 		margin: 0 0 1em 0;
 	}
@@ -23,13 +23,13 @@
 		width: 100%;
 		max-width: 400px;
 		margin: 0 0 1em 0;
-	} */
-
+	} 
+	*/
 	p {
 		margin: 1em auto;
-	}
-
-	/* @media (min-width: 480px) {
+	} 
+	/*
+	@media (min-width: 480px) {
 		h1 {
 			font-size: 4em;
 		}
@@ -40,4 +40,5 @@
 	<title>Cepi</title>
 </svelte:head>
 
-<p><strong>Welcome to Cepi!</strong></p>
+<h1>Cepi</h1>
+<p>A MMORPG with putting the MMO in RPG.</p>
