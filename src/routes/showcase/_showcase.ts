@@ -1,6 +1,6 @@
 interface ImageShowcase {
 	url: string;
-	description?: string;
+	description: string;
 	video?: string;
 	creators: string[];
 }
