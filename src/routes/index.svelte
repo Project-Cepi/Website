@@ -3,6 +3,14 @@
 </script>
 
 <style>
+
+	#container {
+		max-width: 56em;
+		padding: 2em;
+		margin: 0 auto;
+		box-sizing: border-box;
+	}
+
 	/* h1, figure, p {
 		text-align: center;
 		margin: 0 auto;
@@ -47,6 +55,7 @@
 <svelte:head>
 	<title>Cepi</title>
 </svelte:head>
-
-<h1>Putting the MMO in RPG</h1>
-<p>We're a team of builders, writers, game desginers, and developers, working together to make an RPG that is truly playable by you and your friends. </p>
+<div id="container">
+	<h1>Putting the MMO in RPG</h1>
+	<p>We're a team of builders, writers, game desginers, and developers, working together to make an RPG that is truly playable by you and your friends. </p>
+</div>
