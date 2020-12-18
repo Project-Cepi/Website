@@ -2,17 +2,11 @@
 	<title>About Cepi</title>
 </svelte:head>
 
-<style>
-	#container {
-		max-width: 56em;
-		padding: 2em;
-		margin: 0 auto;
-		box-sizing: border-box;
-	}
-</style>
+<script>
+	import Container from '../components/Container.svelte'
+</script>
 
-
-<div id="container">
+<Container>
 	<h1>About Cepi</h1>
 
 	<p>
@@ -24,4 +18,4 @@
 		Our Development Team contains many talented individuals who have learned a lot and continue to grow while working on this project.
 		We continue to strive to improve and are focused on delivering the best results possible.
 	</p>
-</div>
+</Container>

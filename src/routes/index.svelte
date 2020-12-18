@@ -1,16 +1,8 @@
 <script>
-	import successkid from 'images/successkid.jpg';
+	import Container from '../components/Container.svelte'
 </script>
 
 <style>
-
-	#container {
-		max-width: 56em;
-		padding: 2em;
-		margin: 0 auto;
-		box-sizing: border-box;
-	}
-
 	h1 {
 		font-size: 2.8em;
 		text-transform: uppercase;
@@ -35,7 +27,8 @@
 <svelte:head>
 	<title>Cepi</title>
 </svelte:head>
-<div id="container">
+
+<Container>
 	<h1>Putting the MMO in RPG</h1>
 	<p>We're a team of builders, writers, game desginers, and developers, working together to make an RPG that is truly playable by you and your friends. </p>
-</div>
+</Container>
