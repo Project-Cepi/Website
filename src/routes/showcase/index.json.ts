@@ -31,6 +31,11 @@ const showcase: IShowcase[] = [
 		url: "https://cdn.discordapp.com/attachments/714993312037339167/788817724317892608/2020-10-01_22.12.41.png",
 		creators: [],
 		description: "A big tree overshadows Tarnis, making the brighter colors pop out."
+	},
+	{
+		"url": "https://i.imgur.com/hIKkXzn.jpg",
+		creators: [],
+		description: "A colorful bird in the colorful tarnis area."
 	}
 ];
 
