@@ -57,6 +57,10 @@
 	}
 </style>
 
+<svelte:head>
+	<title>Showcase</title>
+</svelte:head>
+
 <script lang="ts">
 	export let showcase: IShowcase[];
 </script>
