@@ -36,6 +36,11 @@ const showcase: IShowcase[] = [
 		creators: [],
 		slug: "tarnis-parrot",
 		description: "A colorful bird in the colorful tarnis area."
+	},
+	{
+		creators: ["savagechick3n"],
+		slug: "knife",
+		description: "Jakane holds a knife behind him towards a wall."
 	}
 ];
 
