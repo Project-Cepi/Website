@@ -4,6 +4,7 @@ const sveltePreprocess = require('svelte-preprocess');
 const path = require('path');
 const config = require('sapper/config/webpack.js');
 const pkg = require('./package.json');
+const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
 
 const mode = process.env.NODE_ENV;
 const dev = mode === 'development';
@@ -86,7 +87,14 @@ module.exports = {
 		},
 		mode,
 		plugins: [
-			new WebpackModules()
+			new WebpackModules(),
+			new ImageMinimizerPlugin({
+				minimizerOptions: {
+					plugins: [
+						[ 'pngquant' ]
+					]
+				}
+			})
 		],
 		performance: {
 			hints: false // it doesn't matter if server.js is large

@@ -66,6 +66,6 @@
 </script>
 <section id="photos">
 	{#each showcase as showcaseLoop}
-		<img src={showcaseLoop.url} alt={showcaseLoop.description}/>
+		<img src="/showcase/{showcaseLoop.slug}.png" alt={showcaseLoop.description}/>
 	{/each}
 </section>
