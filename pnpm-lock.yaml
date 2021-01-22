@@ -7,16 +7,16 @@ devDependencies:
   '@types/compression': 1.7.0
   '@types/node': 14.14.22
   '@types/polka': 0.5.2
-  file-loader: 6.2.0_webpack@5.16.0
+  file-loader: 6.2.0_webpack@5.17.0
   sapper: 0.28.10_svelte@3.31.2
   svelte: 3.31.2
   svelte-check: 1.1.28_svelte@3.31.2
   svelte-loader: 3.0.0_svelte@3.31.2
   svelte-preprocess: 4.6.3_svelte@3.31.2+typescript@4.1.3
-  ts-loader: 8.0.14_typescript@4.1.3+webpack@5.16.0
+  ts-loader: 8.0.14_typescript@4.1.3+webpack@5.17.0
   tslib: 2.1.0
   typescript: 4.1.3
-  webpack: 5.16.0
+  webpack: 5.17.0
   webpack-modules: 1.0.0
 lockfileVersion: 5.2
 packages:
@@ -50,21 +50,21 @@ packages:
   /@types/eslint-scope/3.7.0:
     dependencies:
       '@types/eslint': 7.2.6
-      '@types/estree': 0.0.45
+      '@types/estree': 0.0.46
     dev: true
     resolution:
       integrity: sha512-O/ql2+rrCUe2W2rs7wMR+GqPRcgB6UiqN5RhrR5xruFlY7l9YLMn0ZkDzjoHLeiFkR8MCQZVudUuuvQ2BLC9Qw==
   /@types/eslint/7.2.6:
     dependencies:
-      '@types/estree': 0.0.45
+      '@types/estree': 0.0.46
       '@types/json-schema': 7.0.6
     dev: true
     resolution:
       integrity: sha512-I+1sYH+NPQ3/tVqCeUSBwTE/0heyvtXqpIopUUArlBm0Kpocb8FbMa3AZ/ASKIFpN3rnEx932TTXDbt9OXsNDw==
-  /@types/estree/0.0.45:
+  /@types/estree/0.0.46:
     dev: true
     resolution:
-      integrity: sha512-jnqIUKDUqJbDIUxm0Uj7bnlMnRm1T/eZ9N+AVMqhPgzrba2GhGG5o/jCTwmdPK709nEZsGoMzXEDUjcXHa3W0g==
+      integrity: sha512-laIjwTQaD+5DukBZaygQ79K1Z0jb1bPEMRrkXSLjtCcZm+abyp5YbrqpSLzD42FwWW6gK/aS4NYpJ804nG2brg==
   /@types/express-serve-static-core/4.17.13:
     dependencies:
       '@types/node': 14.14.20
@@ -94,10 +94,6 @@ packages:
     dev: true
     resolution:
       integrity: sha512-Y93R97Ouif9JEOWPIUyU+eyIdyRqQR0I8Ez1dzku4hDx34NWh4HbtIc3WNzwB1Y9ULvNGeu5B8h8bVL5cAk4/A==
-  /@types/node/14.14.21:
-    dev: true
-    resolution:
-      integrity: sha512-cHYfKsnwllYhjOzuC5q1VpguABBeecUp24yFluHpn/BQaVxB1CuQ1FSRZCzrPxrkIfWISXV2LbeoBthLWg0+0A==
   /@types/node/14.14.22:
     dev: true
     resolution:
@@ -565,11 +561,11 @@ packages:
     dev: true
     resolution:
       integrity: sha512-lhd/wF+Lk98HZoTCtlVraHtfh5XYijIjalXck7saUtuanSDyLMxnHhSXEDJqHxD7msR8D0uCmqlkwjCV8xvwHw==
-  /file-loader/6.2.0_webpack@5.16.0:
+  /file-loader/6.2.0_webpack@5.17.0:
     dependencies:
       loader-utils: 2.0.0
       schema-utils: 3.0.0
-      webpack: 5.16.0
+      webpack: 5.17.0
     dev: true
     engines:
       node: '>= 10.13.0'
@@ -721,7 +717,7 @@ packages:
       integrity: sha1-u5NdSFgsuhaMBoNJV6VKPgcSTxE=
   /jest-worker/26.6.2:
     dependencies:
-      '@types/node': 14.14.21
+      '@types/node': 14.14.22
       merge-stream: 2.0.0
       supports-color: 7.2.0
     dev: true
@@ -1282,7 +1278,7 @@ packages:
       node: '>=6'
     resolution:
       integrity: sha512-FBk4IesMV1rBxX2tfiK8RAmogtWn53puLOQlvO8XuwlgxcYbP4mVPS9Ph4aeamSyyVjOl24aYWAuc8U5kCVwMw==
-  /terser-webpack-plugin/5.1.1_webpack@5.16.0:
+  /terser-webpack-plugin/5.1.1_webpack@5.17.0:
     dependencies:
       jest-worker: 26.6.2
       p-limit: 3.1.0
@@ -1290,7 +1286,7 @@ packages:
       serialize-javascript: 5.0.1
       source-map: 0.6.1
       terser: 5.5.1
-      webpack: 5.16.0
+      webpack: 5.17.0
     dev: true
     engines:
       node: '>= 10.13.0'
@@ -1331,7 +1327,7 @@ packages:
       node: '>=6'
     resolution:
       integrity: sha512-3Swwu638QQWOefHLss9cdyLi5/9BKYmXZEXpH0KOFfB9YZwUAwHbDAcoYxaHfqAeFvbi/LqAK7rGkhCr1v1BJA==
-  /ts-loader/8.0.14_typescript@4.1.3+webpack@5.16.0:
+  /ts-loader/8.0.14_typescript@4.1.3+webpack@5.17.0:
     dependencies:
       chalk: 4.1.0
       enhanced-resolve: 4.3.0
@@ -1339,7 +1335,7 @@ packages:
       micromatch: 4.0.2
       semver: 7.3.4
       typescript: 4.1.3
-      webpack: 5.16.0
+      webpack: 5.17.0
     dev: true
     engines:
       node: '>=10.0.0'
@@ -1414,10 +1410,10 @@ packages:
       node: '>=10.13.0'
     resolution:
       integrity: sha512-bQsA24JLwcnWGArOKUxYKhX3Mz/nK1Xf6hxullKERyktjNMC4x8koOeaDNTA2fEJ09BdWLbM/iTW0ithREUP0w==
-  /webpack/5.16.0:
+  /webpack/5.17.0:
     dependencies:
       '@types/eslint-scope': 3.7.0
-      '@types/estree': 0.0.45
+      '@types/estree': 0.0.46
       '@webassemblyjs/ast': 1.11.0
       '@webassemblyjs/wasm-edit': 1.11.0
       '@webassemblyjs/wasm-parser': 1.11.0
@@ -1437,7 +1433,7 @@ packages:
       pkg-dir: 5.0.0
       schema-utils: 3.0.0
       tapable: 2.2.0
-      terser-webpack-plugin: 5.1.1_webpack@5.16.0
+      terser-webpack-plugin: 5.1.1_webpack@5.17.0
       watchpack: 2.1.0
       webpack-sources: 2.2.0
     dev: true
@@ -1450,7 +1446,7 @@ packages:
       webpack-cli:
         optional: true
     resolution:
-      integrity: sha512-QOkctcjYfEGxcYg4AzPJafyAQ7ANc266/URkX881uFA7b2k31E0Dmpy1ExfppHOTp1kHDTsRh9sXojVUvgPF0g==
+      integrity: sha512-R+IdNEaYcYaACpXZOt7reyc8txBK7J06lOPkX1SbgmeoAnUbyBZivJIksrDBnmMA3wlTWvPcX7DubxELyPB8rA==
   /wrappy/1.0.2:
     dev: true
     resolution:
@@ -1482,5 +1478,5 @@ specifiers:
   ts-loader: 8.0.14
   tslib: 2.1.0
   typescript: 4.1.3
-  webpack: 5.16.0
+  webpack: 5.17.0
   webpack-modules: 1.0.0
