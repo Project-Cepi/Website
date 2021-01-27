@@ -20,7 +20,7 @@
     "@types/node": "14.14.22",
     "@types/polka": "0.5.2",
     "file-loader": "6.2.0",
-    "sapper": "0.28.10",
+    "sapper": "0.29.0",
     "svelte": "3.31.2",
     "svelte-check": "1.1.28",
     "svelte-loader": "3.0.0",

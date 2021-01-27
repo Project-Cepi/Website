@@ -8,7 +8,7 @@ devDependencies:
   '@types/node': 14.14.22
   '@types/polka': 0.5.2
   file-loader: 6.2.0_webpack@4.44.2
-  sapper: 0.28.10_svelte@3.31.2
+  sapper: 0.29.0_svelte@3.31.2
   svelte: 3.31.2
   svelte-check: 1.1.28_svelte@3.31.2
   svelte-loader: 3.0.0_svelte@3.31.2
@@ -2234,7 +2234,7 @@ packages:
     resolution:
       integrity: sha512-pb/MYmXstAkysRFx8piNI1tGFNQIFA3vkE3Gq4EuA1dF6gHp/+vgZqsCGJapvy8N3Q+4o7FwvquPJcnZ7RYy4g==
   /resolve-url/0.2.1:
-    deprecated: 'https://github.com/lydell/resolve-url#deprecated'
+    deprecated: https://github.com/lydell/resolve-url#deprecated
     dev: true
     resolution:
       integrity: sha1-LGN/53yJOv0qZj/iGqkIAGjiBSo=
@@ -2281,11 +2281,11 @@ packages:
     dev: true
     resolution:
       integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==
-  /sapper/0.28.10_svelte@3.31.2:
+  /sapper/0.29.0_svelte@3.31.2:
     dependencies:
       html-minifier: 4.0.0
       http-link-header: 1.0.3
-      shimport: 2.0.4
+      shimport: 2.0.5
       source-map: 0.6.1
       sourcemap-codec: 1.4.8
       string-hash: 1.1.3
@@ -2295,7 +2295,7 @@ packages:
     peerDependencies:
       svelte: ^3.17.3
     resolution:
-      integrity: sha512-Z6OpuDOHxiRHKd7JCjHaDe8uOM2fFZxpTLsj/0Ib4sM034xstEvNNUtdY7Pg/a85kP3cFCnkNiM1v7W37vzDGg==
+      integrity: sha512-Z1fUY3LwxnuPCeYMvzvwvbG0L5TmoNsZ9t0IP3W7BXwjb13YLXOZ4FXm2uFlKhY9YgGs/o/3/4PIs/lsskF4Ug==
   /schema-utils/1.0.0:
     dependencies:
       ajv: 6.12.6
@@ -2359,10 +2359,10 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-QMEp5B7cftE7APOjk5Y6xgrbWu+WkLVQwk8JNjZ8nKRciZaByEW6MubieAiToS7+dwvrjGhH8jRXz3MVd0AYqQ==
-  /shimport/2.0.4:
+  /shimport/2.0.5:
     dev: true
     resolution:
-      integrity: sha512-5YOyQqYkOFSkPFnpS87De6BYzDiZBc8FS4/aTuGZiST+WmXSwWRoaNRHqyVOeEpSx9wlgYWg9WYfCuzD/11/qA==
+      integrity: sha512-H2FeQyImK4CFhGG1wVhHEB1hASWz+WQK6t2gMP5lk+b0PW30XSrsryDONDBwF1n6hBKsmbr0REfTinaNdEkcPQ==
   /sirv/1.0.10:
     dependencies:
       '@polka/url': 1.0.0-next.11
@@ -2878,7 +2878,7 @@ packages:
     resolution:
       integrity: sha512-B0yRTzYdUCCn9n+F4+Gh4yIDtMQcaJsmYBDsTSG8g/OejKBodLQ2IHfN3bM7jUsRXndopT7OIXWdYqc1fjmV6g==
   /urix/0.1.0:
-    deprecated: 'Please see https://github.com/lydell/urix#deprecated'
+    deprecated: Please see https://github.com/lydell/urix#deprecated
     dev: true
     resolution:
       integrity: sha1-2pN/emLiH+wf0Y1Js1wpNQZ6bHI=
@@ -3026,7 +3026,7 @@ specifiers:
   compression: 1.7.4
   file-loader: 6.2.0
   polka: next
-  sapper: 0.28.10
+  sapper: 0.29.0
   sirv: 1.0.10
   svelte: 3.31.2
   svelte-check: 1.1.28
