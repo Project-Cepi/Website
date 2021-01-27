@@ -37,6 +37,6 @@
 </svelte:head>
 
 <Container>
-	<h1>Taking MINECRAFT MMOs to the next level.</h1>
+	<h1>Taking MINECRAFT MMOs to the next level</h1>
 	<p>We're a team of builders, writers, game designers, and developers, working together to make a MMORPG that is truly playable by you and your friends. </p>
 </Container>
