@@ -21,7 +21,7 @@
     "@types/polka": "0.5.2",
     "file-loader": "6.2.0",
     "sapper": "0.29.0",
-    "svelte": "3.31.2",
+    "svelte": "3.32.0",
     "svelte-check": "1.1.28",
     "svelte-loader": "3.0.0",
     "svelte-preprocess": "4.6.3",
