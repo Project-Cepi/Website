@@ -2,11 +2,6 @@ import type IShowcase from './_showcase';
 
 const showcase: IShowcase[] = [
 	{
-		creators: ["savagechick3n", "LeoDog896"],
-		slug: "dirt-slab",
-		description: "Retextured unused slabs turned dirty."
-	},
-	{
 		creators: [],
 		description: "Alpha area for Minestom.",
 		slug: "alpha-minestom",
