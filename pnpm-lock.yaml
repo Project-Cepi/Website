@@ -7,16 +7,16 @@ devDependencies:
   '@types/compression': 1.7.0
   '@types/node': 14.14.22
   '@types/polka': 0.5.2
-  file-loader: 6.2.0_webpack@4.44.2
+  file-loader: 6.2.0_webpack@4.46.0
   sapper: 0.29.0_svelte@3.31.2
   svelte: 3.31.2
   svelte-check: 1.1.29_svelte@3.31.2
   svelte-loader: 3.0.0_svelte@3.31.2
   svelte-preprocess: 4.6.3_svelte@3.31.2+typescript@4.1.3
-  ts-loader: 8.0.14_typescript@4.1.3+webpack@4.44.2
+  ts-loader: 8.0.14_typescript@4.1.3+webpack@4.46.0
   tslib: 2.1.0
   typescript: 4.1.3
-  webpack: 4.44.2
+  webpack: 4.46.0
   webpack-modules: 1.0.0
 lockfileVersion: 5.2
 packages:
@@ -942,6 +942,16 @@ packages:
       node: '>=6.9.0'
     resolution:
       integrity: sha512-3e87LvavsdxyoCfGusJnrZ5G8SLPOFeHSNpZI/ATL9a5leXo2k0w6MKnbqhdBad9qTobSfB20Ld7UmgoNbAZkQ==
+  /enhanced-resolve/4.5.0:
+    dependencies:
+      graceful-fs: 4.2.4
+      memory-fs: 0.5.0
+      tapable: 1.1.3
+    dev: true
+    engines:
+      node: '>=6.9.0'
+    resolution:
+      integrity: sha512-Nv9m36S/vxpsI+Hc4/ZGRs0n9mXqSWGGq49zxb/cJfPAQMbUtttJAlNPS4AQzaBdw/pKskw5bMbekT/Y7W/Wlg==
   /errno/0.1.7:
     dependencies:
       prr: 1.0.1
@@ -1049,11 +1059,11 @@ packages:
     dev: true
     resolution:
       integrity: sha512-0btnI/H8f2pavGMN8w40mlSKOfTK2SVJmBfBeVIj3kNw0swwgzyRq0d5TJVOwodFmtvpPeWPN/MCcfuWF0Ezbw==
-  /file-loader/6.2.0_webpack@4.44.2:
+  /file-loader/6.2.0_webpack@4.46.0:
     dependencies:
       loader-utils: 2.0.0
       schema-utils: 3.0.0
-      webpack: 4.44.2
+      webpack: 4.46.0
     dev: true
     engines:
       node: '>= 10.13.0'
@@ -2632,7 +2642,7 @@ packages:
       node: '>=6'
     resolution:
       integrity: sha512-4WK/bYZmj8xLr+HUCODHGF1ZFzsYffasLUgEiMBY4fgtltdO6B4WJtlSbPaDTLpYTcGVwM2qLnFTICEcNxs3kA==
-  /terser-webpack-plugin/1.4.5_webpack@4.44.2:
+  /terser-webpack-plugin/1.4.5_webpack@4.46.0:
     dependencies:
       cacache: 12.0.4
       find-cache-dir: 2.1.0
@@ -2641,7 +2651,7 @@ packages:
       serialize-javascript: 4.0.0
       source-map: 0.6.1
       terser: 4.8.0
-      webpack: 4.44.2
+      webpack: 4.46.0
       webpack-sources: 1.4.3
       worker-farm: 1.7.0
     dev: true
@@ -2731,7 +2741,7 @@ packages:
       node: '>=6'
     resolution:
       integrity: sha512-3Swwu638QQWOefHLss9cdyLi5/9BKYmXZEXpH0KOFfB9YZwUAwHbDAcoYxaHfqAeFvbi/LqAK7rGkhCr1v1BJA==
-  /ts-loader/8.0.14_typescript@4.1.3+webpack@4.44.2:
+  /ts-loader/8.0.14_typescript@4.1.3+webpack@4.46.0:
     dependencies:
       chalk: 4.1.0
       enhanced-resolve: 4.3.0
@@ -2739,7 +2749,7 @@ packages:
       micromatch: 4.0.2
       semver: 7.3.4
       typescript: 4.1.3
-      webpack: 4.44.2
+      webpack: 4.46.0
     dev: true
     engines:
       node: '>=10.0.0'
@@ -2901,7 +2911,7 @@ packages:
     dev: true
     resolution:
       integrity: sha512-lgTS3Xhv1lCOKo7SA5TjKXMjpSM4sBjNV5+q2bqesbSPs5FjGmU6jjtBSkX9b4qW87vDIsCIlUPOEhbZrMdjeQ==
-  /webpack/4.44.2:
+  /webpack/4.46.0:
     dependencies:
       '@webassemblyjs/ast': 1.9.0
       '@webassemblyjs/helper-module-context': 1.9.0
@@ -2911,7 +2921,7 @@ packages:
       ajv: 6.12.6
       ajv-keywords: 3.5.2_ajv@6.12.6
       chrome-trace-event: 1.0.2
-      enhanced-resolve: 4.3.0
+      enhanced-resolve: 4.5.0
       eslint-scope: 4.0.3
       json-parse-better-errors: 1.0.2
       loader-runner: 2.4.0
@@ -2923,7 +2933,7 @@ packages:
       node-libs-browser: 2.2.1
       schema-utils: 1.0.0
       tapable: 1.1.3
-      terser-webpack-plugin: 1.4.5_webpack@4.44.2
+      terser-webpack-plugin: 1.4.5_webpack@4.46.0
       watchpack: 1.7.5
       webpack-sources: 1.4.3
     dev: true
@@ -2939,7 +2949,7 @@ packages:
       webpack-command:
         optional: true
     resolution:
-      integrity: sha512-6KJVGlCxYdISyurpQ0IPTklv+DULv05rs2hseIXer6D7KrUicRDLFb4IUM1S6LUAKypPM/nSiVSuv8jHu1m3/Q==
+      integrity: sha512-6jJuJjg8znb/xRItk7bkT0+Q7AHCYjjFnvKIWQPkNIOyRqoCGvkOs0ipeQzrqz4l5FtN5ZI/ukEHroeX/o1/5Q==
   /worker-farm/1.7.0:
     dependencies:
       errno: 0.1.7
@@ -2985,5 +2995,5 @@ specifiers:
   ts-loader: 8.0.14
   tslib: 2.1.0
   typescript: 4.1.3
-  webpack: 4.44.2
+  webpack: 4.46.0
   webpack-modules: 1.0.0
