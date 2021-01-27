@@ -4,7 +4,7 @@
 
 <style>
 	h1 {
-		font-size: 2.8em;
+		font-size: 4.8em;
 		text-transform: uppercase;
 		font-weight: 700;
 		margin: 0 0 0.5em 0;
@@ -16,10 +16,18 @@
 		text-align: center;
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
+		padding-bottom: 30px;
+		border-bottom: 10px solid;
+		border-image-slice: 1;
+		border-width: 5px;
+		border-image-source: linear-gradient(to right,  rgba(41,214,78,1), rgba(0,185,255,1));
 	}
 
 	p {
 		margin: 1em auto;
+		font-size: 1.8em;
+		text-align: center;
+		color: #858585;
 	}
 	
 </style>
