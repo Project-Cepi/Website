@@ -64,6 +64,7 @@
 		<li><a rel=prefetch aria-current="{segment === 'showcase' ? 'page' : undefined}" href="showcase">showcase</a></li>
 
 		<li class="social"><a href="https://forums.cepi.world">forum</a></li>
+		<li class="social"><a href="https://youtube.cepi.world">youtube</a></li>
 		<li class="social"><a href="https://github.cepi.world">github</a></li>
 		<li class="social"><a href="https://discord.cepi.world">discord</a></li>
 		<li class="social"><a href="https://twitter.cepi.world">twitter</a></li>
