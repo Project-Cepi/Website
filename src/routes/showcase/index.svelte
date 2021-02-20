@@ -13,26 +13,13 @@
 	#photos {
 		/* Prevent vertical gaps */
 		line-height: 0;
-
-		-webkit-column-count: 5;
-		-webkit-column-gap:   0px;
-		-moz-column-count:    5;
-		-moz-column-gap:      0px;
-		column-count:         5;
-		column-gap:           0px;  
+		column-count: 4;
+		column-gap: 0px;
 	}
 
 	#photos img {
-		/* Just in case there are inline attributes */
-		width: 100% !important;
-		height: auto !important;
-	}
-	@media (max-width: 1200px) {
-		#photos {
-			-moz-column-count:    4;
-			-webkit-column-count: 4;
-			column-count:         4;
-		}
+		width: 100%;
+		height: auto;
 	}
 	@media (max-width: 1000px) {
 		#photos {
