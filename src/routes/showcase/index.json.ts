@@ -9,23 +9,18 @@ const showcase: IShowcase[] = [
 	},
 	{
 		creators: [],
-		slug: "relan-old",
-		description: "Relan before being revamped."
-	},
-	{
-		creators: [],
 		slug: "relan",
-		description: "Relan with volumetric lighting."
+		description: "A peaceful village hidden within a magical mountain.."
 	},
 	{
 		creators: [],
-		slug: "tarnis-shady",
-		description: "A shady spot in Tarnis"
+		slug: "tarnis",
+		description: "Rebellious town."
 	},
 	{
 		creators: [],
-		slug: "tarnis-big-tree",
-		description: "A big tree overshadows Tarnis, making the brighter colors pop out."
+		slug: "tarnis-alleyway",
+		description: "Colorful markets of a colorful community."
 	},
 	{
 		creators: ["savagechick3n"],
