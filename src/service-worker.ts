@@ -1,3 +1,4 @@
+importScripts('https://arc.io/arc-sw-core.js')
 import { timestamp, files, shell } from '@sapper/service-worker';
 
 const ASSETS = `cache${timestamp}`;
