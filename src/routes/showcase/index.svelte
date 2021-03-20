@@ -17,7 +17,12 @@
 		column-gap: 0px;
 	}
 
-	#photos img {
+	.photo {
+		width: 100%;
+		height: auto;
+	}
+
+	.photo img {
 		width: 100%;
 		height: auto;
 	}
@@ -53,6 +58,8 @@
 </script>
 <section id="photos">
 	{#each showcase as showcaseLoop}
-		<img src="/showcase/{showcaseLoop.slug}.webp" alt={showcaseLoop.description}/>
+		<div class="photo">
+			<img src="/showcase/{showcaseLoop.slug}.webp" alt={showcaseLoop.description}/>
+		</div>
 	{/each}
 </section>

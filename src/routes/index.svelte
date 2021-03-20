@@ -38,5 +38,5 @@
 
 <Container>
 	<h1>Taking MINECRAFT MMOs to the next level</h1>
-	<p>We're a group of savvy people working together to make a MMORPG that is truly explorable by you and your friends. </p>
+	<p>We're a group of talented people working together to make a multiplayer & exploration focused MMORPG </p>
 </Container>
