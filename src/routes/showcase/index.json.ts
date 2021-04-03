@@ -59,7 +59,7 @@ const showcase: IShowcase[] = [
 	}
 ];
 
-export async function get(): Promise<any> {
+export async function get(): Promise<{ body: IShowcase[] }> {
 
 	return {
 		body: showcase
