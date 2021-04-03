@@ -3,7 +3,7 @@
 </svelte:head>
 
 <script>
-	import Container from '../components/Container.svelte'
+	import Container from '$lib/Container.svelte'
 </script>
 
 <Container>

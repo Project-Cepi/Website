@@ -1,8 +1,8 @@
 <script>
-	import Container from '../components/Container.svelte'
+	import Container from '$lib/Container.svelte'
 </script>
 
-<style>
+<style lang="scss">
 	h1 {
 		font-size: 4.8em;
 		text-transform: uppercase;
@@ -22,7 +22,6 @@
 		border-width: 5px;
 		border-image-source: linear-gradient(to right,  rgba(41,214,78,1), rgba(0,185,255,1));
 	}
-
 	p {
 		margin: 1em auto;
 		font-size: 1.8em;

@@ -59,10 +59,9 @@ const showcase: IShowcase[] = [
 	}
 ];
 
-export function get(req, res) {
-	res.writeHead(200, {
-		'Content-Type': 'application/json'
-	});
+export async function get(): Promise<any> {
 
-	res.end(JSON.stringify(showcase));
+	return {
+		body: showcase
+	}
 }

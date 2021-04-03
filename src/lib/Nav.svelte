@@ -2,23 +2,23 @@
 	export let segment: string;
 </script>
 
-<style>
+<style lang="scss">
 	nav {
 		border-bottom: 1px solid rgba(255,62,0,0.1);
 		font-weight: 300;
 		padding: 0 1em;
 	}
-
 	ul {
 		margin: 0;
 		padding: 0;
-	}
 
-	/* clearfix */
-	ul::after {
-		content: '';
-		display: block;
-		clear: both;
+		// Clearfix
+		&::after {
+			content: '';
+			display: block;
+			clear: both;
+		}
+
 	}
 
 	li {
@@ -29,16 +29,17 @@
 	[aria-current] {
 		position: relative;
 		display: inline-block;
-	}
 
-	[aria-current]::after {
-		position: absolute;
-		content: '';
-		width: calc(100% - 1em);
-		height: 2px;
-		background-color: rgb(76, 230, 0);
-		display: block;
-		bottom: -1px;
+		&::after {
+			position: absolute;
+			content: '';
+			width: calc(100% - 1em);
+			height: 2px;
+			background-color: rgb(76, 230, 0);
+			display: block;
+			bottom: -1px;
+			
+		}
 	}
 
 	a {
@@ -46,7 +47,7 @@
 		padding: 1em 0.5em;
 		display: block;
 	}
-
+	
 	li.social {
 		float: right;
 		text-align: right;
@@ -58,10 +59,7 @@
 		<li><a aria-current="{segment === undefined ? 'page' : undefined}" href=".">home</a></li>
 		<li><a aria-current="{segment === 'about' ? 'page' : undefined}" href="about">about</a></li>
 
-		<!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
-		     the blog data when we hover over the link or tap it on a touchscreen -->
-		<li><a rel=prefetch aria-current="{segment === 'blog' ? 'page' : undefined}" href="blog">blog</a></li>
-		<li><a rel=prefetch aria-current="{segment === 'showcase' ? 'page' : undefined}" href="showcase">showcase</a></li>
+		<li><a sveltekit:prefetch aria-current="{segment === 'showcase' ? 'page' : undefined}" href="showcase">showcase</a></li>
 
 		<li class="social"><a href="https://forums.cepi.world" target="_blank">forum</a></li>
 		<li class="social"><a href="https://youtube.cepi.world" target="_blank">youtube</a></li>

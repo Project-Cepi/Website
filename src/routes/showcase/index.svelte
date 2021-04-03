@@ -1,11 +1,15 @@
 <script context="module" lang="ts">
 	import type IShowcase from './_showcase';
-	export function preload() {
-		return this.fetch(`showcase.json`)
-		.then((r: { json: () => any; }) => r.json())
-		.then((showcase: IShowcase[]) => {
-			return { showcase };
-		});
+	export async function load({ page, fetch, session, context }) {
+		const response = await fetch(`/showcase.json`)
+
+		if (response.ok) {
+			return {
+				props: {
+					showcase: await response.json()
+				}
+			}
+		}
 	}
 </script>
 
@@ -16,12 +20,10 @@
 		column-count: 4;
 		column-gap: 0px;
 	}
-
 	.photo {
 		width: 100%;
 		height: auto;
 	}
-
 	.photo img {
 		width: 100%;
 		height: auto;
