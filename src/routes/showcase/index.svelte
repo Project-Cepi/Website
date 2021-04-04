@@ -1,6 +1,6 @@
 <script context="module" lang="ts">
 	import type IShowcase from './_showcase';
-	export async function load({ page, fetch, session, context }) {
+	export async function load({ fetch }) {
 		const response = await fetch(`/showcase.json`)
 
 		if (response.ok) {

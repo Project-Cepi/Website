@@ -20,6 +20,13 @@ module.exports = {
 			ssr: {
 				noExternal: Object.keys(pkg.dependencies || {})
 			}
-		}
+		},
+		hydrate: false,
+		prerender: {
+			crawl: true,
+			enabled: true,
+			force: false,
+			pages: ['*']
+		},
 	}
 };
