@@ -9,10 +9,8 @@
 </script>
 
 <Nav segment={$page.path}/>
-<PageTransition refresh={$page.path}>
-	<main>
-		<slot></slot>
-	</main>
-</PageTransition>
+<main>
+	<slot></slot>
+</main>
 
 <Footer></Footer>
