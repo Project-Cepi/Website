@@ -13,27 +13,40 @@
 	}
 </script>
 
-<style>
+<style lang="scss">
 	#photos {
-		/* Prevent vertical gaps */
 		line-height: 0;
-		column-count: 4;
+		column-count: 3;
 		column-gap: 0px;
 	}
 	.photo {
 		width: 100%;
 		height: auto;
-	}
-	.photo img {
-		width: 100%;
-		height: auto;
-	}
-	@media (max-width: 1000px) {
-		#photos {
-			-moz-column-count:    3;
-			-webkit-column-count: 3;
-			column-count:         3;
+
+		.photo-description {
+			position: absolute;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			display: flex;
+			align-items: center; /** Y-axis align **/
+			justify-content: center; /** X-axis align **/
+			color: rgba(0,0,0,0);
+			transition: 200ms background, 200ms color;
+			font-size: 1rem;
+
+			&:hover {
+				background: rgba(255, 255, 255, 0.5);
+				color: rgba(0,0,0,1);
+			}
 		}
+
+		img {
+			width: 100%;
+			height: auto;
+			z-index: 0;
+		}
+
 	}
 	@media (max-width: 800px) {
 		#photos {
@@ -62,6 +75,9 @@
 	{#each showcase as showcaseLoop}
 		<div class="photo">
 			<img src="/showcase/{showcaseLoop.slug}.webp" alt={showcaseLoop.description}/>
+			<div class="photo-description">
+				<p>{showcaseLoop.description}</p>
+			</div>
 		</div>
 	{/each}
 </section>
