@@ -36,8 +36,8 @@
 			transition: 200ms background, 200ms color;
 
 			&:hover {
-				background: rgba(255, 255, 255, 0.5);
-				color: rgba(0,0,0,1);
+				background: rgba(66, 135, 245, 0.5);
+				color: rgba(255,255,255,1);
 			}
 		}
 

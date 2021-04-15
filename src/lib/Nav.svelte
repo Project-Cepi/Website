@@ -26,7 +26,7 @@
 		float: left;
 	}
 
-	.page {
+	.current {
 		position: relative;
 		display: inline-block;
 
@@ -56,10 +56,10 @@
 
 <nav>
 	<ul>
-		<li><a class="{segment === undefined ? 'page' : undefined}" href=".">home</a></li>
-		<li><a class="{segment === 'about' ? 'page' : undefined}" href="about">about</a></li>
+		<li><a class="{segment === "/" ? "current" : ""}" href=".">home</a></li>
+		<li><a class="{segment === "/about" ? "current" : ""}" href="about">about</a></li>
 
-		<li><a class="{segment === 'showcase' ? 'page' : undefined}" href="showcase">showcase</a></li>
+		<li><a class="{segment === "/showcase" ? "current" : ""}" href="showcase">showcase</a></li>
 
 		<li class="social"><a href="https://forums.cepi.world" target="_blank">forum</a></li>
 		<li class="social"><a href="https://youtube.cepi.world" target="_blank">youtube</a></li>
