@@ -20,14 +20,13 @@
 		column-gap: 0px;
 	}
 	.photo {
-		position: relative;
 		width: 100%;
 		height: auto;
+		position: relative;
 
 		.photo-description {
 			position: absolute;
 			top: 0;
-			left: 0;
 			width: 100%;
 			height: 100%;
 			display: flex;
@@ -35,7 +34,6 @@
 			justify-content: center; /** X-axis align **/
 			color: rgba(0,0,0,0);
 			transition: 200ms background, 200ms color;
-			font-size: 1rem;
 
 			&:hover {
 				background: rgba(255, 255, 255, 0.5);
