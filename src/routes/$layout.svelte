@@ -5,7 +5,6 @@
 	import Nav from '$lib/Nav.svelte';
 	import Footer from '$lib/Footer.svelte';
 	import '../app.scss';
-	import PageTransition from '$lib/PageTransition.svelte';
 </script>
 
 <Nav segment={$page.path}/>
