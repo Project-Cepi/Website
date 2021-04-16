@@ -15,25 +15,42 @@
 
 <style lang="scss">
 	#photos {
-		line-height: 0;
-		column-count: 3;
-		column-gap: 0px;
+		display: grid;
+		gap: 0px;
+
+		grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
+		grid-auto-flow: dense;
+		grid-auto-rows: auto 1fr;
+	}
+
+	@keyframes photoCreation {
+		from {
+			opacity: 0;
+			transform: scale(0.2);
+		}
+		to {
+			opacity: 1;
+			transform: scale(1);
+		}
 	}
 	.photo {
 		width: 100%;
 		height: auto;
 		position: relative;
+		animation: photoCreation 600ms ease-out;
+		animation-fill-mode: backwards;
+		display: flex;
 
 		.photo-description {
 			position: absolute;
 			top: 0;
-			width: 100%;
-			height: 100%;
-			display: flex;
-			align-items: center; /** Y-axis align **/
-			justify-content: center; /** X-axis align **/
+			width: calc(100%);
+			height: calc(100%);
+			display: grid;
+			place-items: center;
 			color: rgba(0,0,0,0);
 			transition: 200ms background, 200ms color;
+			text-align: center;
 
 			&:hover {
 				background: rgba(66, 135, 245, 0.5);
@@ -45,9 +62,18 @@
 			width: 100%;
 			height: auto;
 			z-index: 0;
+			object-fit: cover;
+
 		}
 
 	}
+
+	@for $i from 1 through var(--showcase-size) {
+		.photo:nth-child(#{$i}) {
+			animation-delay: calc(30ms * #{$i});
+		}
+	}
+
 	@media (max-width: 800px) {
 		#photos {
 			-moz-column-count:    2;
