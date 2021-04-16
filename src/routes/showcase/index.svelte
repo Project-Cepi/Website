@@ -68,7 +68,7 @@
 
 	}
 
-	@for $i from 1 through var(--showcase-size) {
+	@for $i from 1 through 11 {
 		.photo:nth-child(#{$i}) {
 			animation-delay: calc(30ms * #{$i});
 		}
