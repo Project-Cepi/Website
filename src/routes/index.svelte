@@ -3,13 +3,16 @@
 </script>
 
 <style lang="scss">
+
+	@use "../lib/colors.scss";
+
 	h1 {
 		font-size: 4.8em;
 		text-transform: uppercase;
 		font-weight: 700;
 		margin: 0 0 0.5em 0;
 		text-align: center;
-		background: linear-gradient(90deg, rgba(41,214,78,1) 0%, rgba(0,185,255,1) 50%, rgba(41,214,78,1) 100%);
+		background: linear-gradient(90deg, colors.$first 0%, colors.$second, colors.$first);
 		background-clip: text;
 		background-size: 200% auto;
 		background-repeat: repeat;
@@ -20,7 +23,7 @@
 		border-bottom: 10px solid;
 		border-image-slice: 1;
 		border-width: 5px;
-		border-image-source: linear-gradient(to right,  rgba(41,214,78,1), rgba(0,185,255,1));
+		border-image-source: linear-gradient(to right,  colors.$first, colors.$second);
 	}
 	p {
 		margin: 1em auto;

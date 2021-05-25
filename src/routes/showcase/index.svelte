@@ -100,7 +100,7 @@
 <section id="photos">
 	{#each showcase as showcaseLoop}
 		<div class="photo">
-			<img src="/showcase/{showcaseLoop.slug}.webp" alt={showcaseLoop.description}/>
+			<img src="/showcase/{showcaseLoop.slug}.webp" loading="lazy" alt={showcaseLoop.description}/>
 			<div class="photo-description">
 				<p>{showcaseLoop.description}</p>
 			</div>
