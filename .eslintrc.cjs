@@ -1,3 +1,6 @@
+/* jshint esversion: 9 */
+const typescript = require('typescript');
+
 module.exports = {
 	root: true,
 	parser: '@typescript-eslint/parser',
@@ -6,15 +9,20 @@ module.exports = {
 	ignorePatterns: ['*.cjs'],
 	overrides: [{ files: ['*.svelte'], processor: 'svelte3/svelte3' }],
 	settings: {
-		'svelte3/typescript': require('typescript')
+		'svelte3/typescript': () => typescript,
+		'svelte3/ignore-styles': () => true,
 	},
 	parserOptions: {
 		sourceType: 'module',
-		ecmaVersion: 2019
+		ecmaVersion: 2020,
 	},
 	env: {
 		browser: true,
-		es2017: true,
-		node: true
-	}
+		node: true,
+		es2020: true,
+	},
+	rules: {
+		semi: ['error', 'always'],
+		'no-console': ['warn'],
+	},
 };

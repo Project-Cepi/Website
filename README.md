@@ -1,42 +1,50 @@
-# create-svelte
+# :rocket: Sveltekit Starter
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte);
+[![Powered By Sveltekit](https://img.shields.io/badge/powered%20by-svelte-FF3C02.svg?style=flat&logo=svelte)](https://kit.svelte.dev/) [![Language: TypeScript](https://img.shields.io/badge/language-typescript-blue.svg?style=flat&logo=typescript)](https://www.typescriptlang.org/) [![ECMAScript: 2019](https://img.shields.io/badge/ES-9-F7DF1E.svg?style=flat&logo=javascript)](https://github.com/tc39/ecma262) [![Tailwindcss](https://img.shields.io/badge/Tailwindcss-CSS--Framework-%2338B2AC?logo=tailwindcss)](https://tailwindcss.com) [![Postcss](https://img.shields.io/badge/Postcss-style-%23DD3A0A?style=flat&logo=postcss)](https://postcss.org) [![SCSS](https://img.shields.io/badge/SCSS-Style-%23CC6699?style=flat&logo=sass)](https://sass-lang.com/) [![StorybookJS](https://img.shields.io/badge/Storybook-UI--Webcomponent--tool-%23FF4785?style=flat&logo=storybook)](https://storybook.js.org/) [![Jest](https://img.shields.io/badge/Jest-Unit--Testing--Framework-%23C21325?style=flat&logo=jest)](https://jestjs.io/) [![Prettier](https://img.shields.io/badge/Prettier-code--formatter-%23F7B93E?style=flat&logo=prettier)](https://prettier.io/) [![Eslint](https://img.shields.io/badge/Eslint-linter-%234B32C3?style=flat&logo=eslint)](https://eslint.org/) [![License: MIT](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat&logo=license)](https://github.com/navneetsharmaui/sveltekit-starter/blob/main/LICENSE)
 
-## Creating a project
+## [Svektekit Blog](https://github.com/navneetsharmaui/sveltekit-blog)
 
-If you're seeing this, you've probably already done this step. Congrats!
+Use the above link if you want to use the sveltekit blog template.
 
-```bash
-# create a new project in the current directory
-npm init svelte@next
+![sveltekit](https://user-images.githubusercontent.com/11630812/114088279-7cd7be80-98d2-11eb-883c-66c3bf48f293.png)
 
-# create a new project in my-app
-npm init svelte@next my-app
-```
+Sveltekit starter project created with Sveltekit, Typescript, Tailwindcss, Postcss, SCSS, Husky, ESLint, Prettier, Storybook, and Jest.
+The project has the ***SSR (Server Side Rendering)*** setup. These template is easy to configure and built upon as it has scalable structure.
 
-> Note: the `@next` is temporary
+## :100: :fire: Project LightHouse Report
 
-## Developing
+![sveltekit-starter-lighthouse-report](https://user-images.githubusercontent.com/11630812/115241377-5d485d80-a13e-11eb-8667-611770992c28.png)
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+## :paperclip: Menu
 
-```bash
-npm run dev
+- :bulb: [Features](#bulb-features)
+- :hammer: [Project Setup](#hammer-project-setup)
+- :bug: [Known Bugs](https://github.com/navneetsharmaui/sveltekit-starter/issues)
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+## :bulb: Features
 
-## Building
+- [:heavy_check_mark:] Server side rendering built with ***SEO*** in mind.
+- [:heavy_check_mark:] PWA + Service Worker + Offline.
+- [:heavy_check_mark:] Tailwindcss + Postcss + SCSS Syntax Support in Postcss.
+- [:heavy_check_mark:] Global Style and Variable preconfigured for Postcss.
+- [:heavy_check_mark:] StorybookJS preconfigured (with postcss support).
+- [:heavy_check_mark:] Browser sync, auto refresh, auto reload.
+- [:heavy_check_mark:] 100% on Google Speedpage and 100% Lighthouse report.
+- [:heavy_check_mark:] Friendly and Scalable boilerplate.
+- [:heavy_check_mark:] Typescript + TSPaths (absolute for imports in component) preconfigured.
+- [:heavy_check_mark:] Prettiers, ESLint, and Husky preconfigured.
+- [:heavy_check_mark:] Github and Vscode dotfiles preconfigured.
 
-Svelte apps are built with _adapters_, which optimise your project for deployment to different environments.
+## :hammer: Project Setup
 
-By default, `npm run build` will generate a Node app that you can run with `node build`. To use a different adapter, add it to the `devDependencies` in `package.json` making sure to specify the version as `next` and update your `svelte.config.cjs` to [specify your chosen adapter](https://kit.svelte.dev/docs#configuration-adapter). The following official adapters are available:
+1. `npx degit navneetsharmaui/sveltekit-starter my-app` or Clone this repository.
+2. `npm install` or `yarn install` or `pnpm install`.
+3. `npm run dev` or `yarn run dev` or `pnpm run dev`.
+4. `npm run build:static:ssr` or `yarn run build:static:ssr` or `pnpm run build:static:ssr`.
+5. `npm run preview` or `yarn run preview` or `pnpm run preview`.
 
-- [@sveltejs/adapter-node](https://github.com/sveltejs/kit/tree/master/packages/adapter-node)
-- [@sveltejs/adapter-static](https://github.com/sveltejs/kit/tree/master/packages/adapter-static)
-- [@sveltejs/adapter-netlify](https://github.com/sveltejs/kit/tree/master/packages/adapter-netlify)
-- [@sveltejs/adapter-vercel](https://github.com/sveltejs/kit/tree/master/packages/adapter-vercel)
-- ...more soon
+## 💫 License
 
-[See the adapter documentation for more detail](https://kit.svelte.dev/docs#adapters)
+- Code and Contributions have **MIT License**
+
+*Copyright (c) 2021 [Navneet Sharma](http://github.com/navneetsharmaui) ([@asnavneetsharma](https://twitter.com/asnavneetsharma))*

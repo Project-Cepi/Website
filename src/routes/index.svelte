@@ -1,44 +1,120 @@
-<script>
-	import Container from '$lib/Container.svelte'
+<script lang="ts">
+	// Start: External Imports
+	// End: External Imports
+
+	// Start: Svelte Imports
+	// End: Svelte Imports
+
+	// Start: Local Imports
+
+	// Core services
+
+	// Utils
+
+	// Components
+	import HeadTags from '$components/head-tags/HeadTags.svelte';
+	import BlogPost from '$components/blog-post/BlogPost.svelte';
+	import ProjectCard from '$components/project-card/ProjectCard.svelte';
+
+	// Models
+	import type { IMetaTagProperties } from '$models/interfaces/imeta-tag-properties.interface';
+	import type { IProjectCard } from '$models/interfaces/iproject-card.interface';
+	import type { IBlogPostSummary } from '$models/interfaces/iblog-post-summary.interface';
+	import ExternalLink from '$lib/shared/ui/components/external-link/ExternalLink.svelte';
+	// End: Local Imports
+
+	// Exports
+	// Start: Local component properties
+	/**
+	 * @type {IMetaTagProperties}
+	 */
+	const metaData: Partial<IMetaTagProperties> = {
+		title: `Sveltekit Start | Sveltekit`,
+		description:
+			'Sveltekit starter project created with sveltekit, typescript, tailwindcss, postcss, husky, and storybook. The project has the structure set up for the scaleable project. (sveltekit, typescript, tailwindcss, postcss, husky, Storybook).',
+		keywords: ['sveltekit', 'sveltekit starter', 'sveltekit starter home'],
+	};
+
+	const blogs: IBlogPostSummary[] = [
+		{
+			title: 'Welcome to my site!',
+			summary: 'Fusce ac lorem sit amet metus vestibulum dapibus ut at mauris. Etiam ut pulvinar nibh.',
+		},
+		{
+			title: 'A second article',
+			summary: 'Fusce ac lorem sit amet metus vestibulum dapibus ut at mauris. Etiam ut pulvinar nibh.',
+		},
+		{
+			title: 'Yet another article',
+			summary: 'Fusce ac lorem sit amet metus vestibulum dapibus ut at mauris. Etiam ut pulvinar nibh.',
+		},
+	];
+
+	const projects: IProjectCard[] = [
+		{
+			title: 'Sveltekit Starter',
+			description:
+				'Sveltekit starter project created with sveltekit, typescript, tailwindcss, postcss, husky, and storybook. The project has the structure set up for the scaleable web application.',
+			slug: 'https://github.com/navneetsharmaui/sveltekit-starter',
+			icon: '',
+		},
+		{
+			title: 'Sveltekit Blog',
+			description:
+				'Sveltekit Blog starter project created with sveltekit, typescript, tailwindcss, postcss, husky, and storybook. The project has the structure set up for the scaleable web application and blog.',
+			slug: 'https://github.com/navneetsharmaui/sveltekit-blog',
+			icon: '',
+		},
+	];
+	// End: Local component properties
+
+	// Start: Local component methods
+
+	// End: Local component methods
 </script>
 
-<style lang="scss">
+<!-- Start: Header Tag -->
+<HeadTags metaData="{metaData}" />
+<!-- End: Header Tag -->
 
-	@use "../lib/colors.scss";
+<!-- Start: Home Page container -->
+<div class="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16">
+	<h1 class="font-bold text-3xl md:text-5xl tracking-tight mb-4 text-black dark:text-white">
+		Hey, I’m Sveltekit Starter
+	</h1>
+	<p class="prose text-gray-600 dark:text-gray-400 mb-16">
+		I'm a developer and creator. I work as the Software Developer at XYZ. You’ve found my personal slice of the
+		internet –&nbsp; while you're here
+		<a sveltekit:prefetch href="/about" aria-label="about me" class="text-blue-700 hover:text-blue-800 transition"
+			>learn more about me.</a
+		>
+	</p>
 
-	h1 {
-		font-size: 4.8em;
-		text-transform: uppercase;
-		font-weight: 700;
-		margin: 0 0 0.5em 0;
-		text-align: center;
-		background: linear-gradient(90deg, colors.$first 0%, colors.$second, colors.$first);
-		background-clip: text;
-		background-size: 200% auto;
-		background-repeat: repeat;
-		text-align: center;
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		padding-bottom: 30px;
-		border-bottom: 10px solid;
-		border-image-slice: 1;
-		border-width: 5px;
-		border-image-source: linear-gradient(to right,  colors.$first, colors.$second);
-	}
-	p {
-		margin: 1em auto;
-		font-size: 1.8em;
-		text-align: center;
-		color: #858585;
-	}
-	
-</style>
+	<p class="prose text-gray-600 dark:text-gray-400 mb-16">
+		If you want to use the pre setup blog template then you can use
+		<ExternalLink href="{'https://github.com/navneetsharmaui/sveltekit-blog'}" ariaLabel="{'Sveltekit blog'}"
+			>Sveltekit Blog Template</ExternalLink
+		>
+	</p>
 
-<svelte:head>
-	<title>Cepi</title>
-</svelte:head>
+	<!-- Start: Popular Blog Section -->
+	<h2 class="font-bold text-2xl md:text-4xl tracking-tight mb-4 text-black dark:text-white"> Most Recent </h2>
 
-<Container>
-	<h1>Taking MINECRAFT MMOs to the next level</h1>
-	<p>We're a group of talented people working together to make a multiplayer & exploration focused MMORPG </p>
-</Container>
+	{#if blogs.length > 0}
+		{#each blogs as blog}
+			<BlogPost blog="{blog}" />
+		{/each}
+	{/if}
+	<!-- End: Popular Blog Section -->
+
+	<!-- Start: Top Projects -->
+	<h2 class="font-bold text-2xl md:text-4xl tracking-tight mb-4 mt-8 text-black dark:text-white"> Top Projects </h2>
+
+	{#if projects.length > 0}
+		{#each projects as project}
+			<ProjectCard project="{project}" />
+		{/each}
+	{/if}
+	<!-- End: Top Projects -->
+</div>
+<!-- End: Home Page container -->

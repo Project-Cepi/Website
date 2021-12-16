@@ -2,7 +2,7 @@
 	"compilerOptions": {
 		"moduleResolution": "node",
 		"module": "es2020",
-		"lib": ["es2020"],
+		"lib": ["es2020", "DOM"],
 		"target": "es2019",
 		/**
 			svelte-preprocess cannot figure out whether you have a value or a type, so tell TypeScript
@@ -11,6 +11,8 @@
 		"importsNotUsedAsValues": "error",
 		"isolatedModules": true,
 		"resolveJsonModule": true,
+		"experimentalDecorators": true,
+		"emitDecoratorMetadata": true,
 		/**
 			To have warnings/errors of the Svelte compiler at the correct position,
 			enable source maps by default.
@@ -22,11 +24,48 @@
 		"baseUrl": ".",
 		"allowJs": true,
 		"checkJs": true,
+		"types": ["node", "yargs", "cookie", "node-fetch", "nprogress"],
 		"paths": {
-			"$app/*": [".svelte/dev/runtime/app/*", ".svelte/build/runtime/app/*"],
-			"$service-worker": [".svelte/build/runtime/service-worker"],
-			"$lib/*": ["src/lib/*"]
+			"$app/*": [".svelte-kit/dev/runtime/app/*", ".svelte-kit/build/runtime/app/*"],
+			"$lib/*": ["src/lib/*"],
+			"$stores": ["src/stores/index.ts"],
+			"$core": ["src/lib/core/index.ts"],
+			"$core/*": ["src/lib/core/*"],
+			"$utils": ["src/lib/utils/index.ts"],
+			"$utils/*": ["src/lib/utils/*"],
+			"$layouts/*": ["src/lib/layouts/*"],
+			"$shared": ["src/lib/shared/index.ts"],
+			"$shared/*": ["src/lib/shared/*"],
+			"$components": ["src/lib/shared/components/index.ts"],
+			"$components/*": ["src/lib/shared/components/*"],
+			"$ui": ["src/lib/shared/ui/index.ts"],
+			"$ui/*": ["src/lib/shared/ui/*"],
+			"$models": ["src/lib/models/index.ts"],
+			"$models/*": ["src/lib/models/*"],
+			"$data": ["src/lib/data/index.ts"],
+			"$data/*": ["src/lib/data/*"],
+			"$environment/*": ["src/environments/*"]
 		}
 	},
-	"include": ["src/**/*.d.ts", "src/**/*.js", "src/**/*.ts", "src/**/*.svelte"]
+	"include": [
+		"src/**/*.d.ts",
+		"src/*.d.ts",
+		"src/*.d.ts",
+		"src/**/*.js",
+		"src/**/*.ts",
+		"src/**/**/**/*.ts",
+		"src/**/*.svelte",
+		"scripts/*.ts",
+		"scripts/js/*.ts"
+	],
+	"exclude": [
+		"node_modules/*",
+		"dist/*",
+		".svelte/*",
+		".svelte-kit/*",
+		"build/*",
+		"coverage/*",
+		".vercel_build_output/*",
+		"functions/*"
+	]
 }
