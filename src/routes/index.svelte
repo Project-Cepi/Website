@@ -1,4 +1,5 @@
 <script lang="ts">
+	import GithubLogo from "$lib/GithubLogo.svelte"
 	import DiscordLogo from "$lib/DiscordLogo.svelte";
 	import YoutubeLogo from "$lib/YoutubeLogo.svelte";
 	import TwitterLogo from "$lib/TwitterLogo.svelte";
@@ -25,6 +26,10 @@
 		{
 			url: "https://instagram.cepi.world",
 			component: InstagramLogo
+		},
+		{
+			url: "https://github.cepi.world",
+			component: GithubLogo
 		}
 	]
 </script>

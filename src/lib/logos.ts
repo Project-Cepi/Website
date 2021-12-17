@@ -1,2 +1,2 @@
-export const height = 55
+export const height = 64
 export const color = "#fff"

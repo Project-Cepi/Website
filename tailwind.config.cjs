@@ -21,7 +21,7 @@ const config = {
 		},
 		fontFamily: {
 			body: "Readex Pro"
-		},
+		}
 	},
 
 	plugins: []
