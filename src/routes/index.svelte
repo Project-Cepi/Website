@@ -1,6 +1,7 @@
 <script lang="ts">
-	import DiscordLogo from "./DiscordLogo.svelte";
-	import YoutubeLogo from "./YoutubeLogo.svelte";
+	import DiscordLogo from "$lib/DiscordLogo.svelte";
+	import YoutubeLogo from "$lib/YoutubeLogo.svelte";
+	import TwitterLogo from "$lib/TwitterLogo.svelte";
 
 	interface Social {
 		url: string,
@@ -15,6 +16,10 @@
 		{
 			url: "https://youtube.cepi.world",
 			component: YoutubeLogo
+		},
+		{
+			url: "https://twitter.cepi.world",
+			component: TwitterLogo
 		}
 	]
 </script>
@@ -22,7 +27,7 @@
 <div id="main" class="bg-gradient-to-r from-cyan-300 to-green-300 w-screen h-screen justify-evenly content-around flex flex-col items-center text-center">
 	<h1 class="font-extrabold text-body drop-shadow-lg text-9xl text-white">cepi.world</h1>
 	<iframe title="Cepi Trailer" class="h-1/2 aspect-video rounded-lg shadow-lg" src="https://www.youtube.com/embed/2VJqyIaiUD8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-	<div id="socials" class="flex">
+	<div id="socials" class="flex h-12">
 		{#each socialLinks as {url, component}}
 			<a class="m-1" href={url}><svelte:component this={component}/></a>
 		{/each}
