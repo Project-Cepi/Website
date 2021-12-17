@@ -4,7 +4,7 @@ const config = {
 	theme: {
 		extend: {},
 		fontFamily: {
-			body: "Open Sans"
+			body: "Readex Pro"
 		}
 	},
 
