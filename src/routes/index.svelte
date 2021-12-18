@@ -48,10 +48,20 @@
 			url: "https://cepi.world/dev"
 		}
 	]
+
+	const copyText = (str: string) => navigator.clipboard.writeText(str)
 </script>
 
 <div id="main" class="animate-gradient-x bg-gradient-to-r from-cyan-300 to-green-300 w-screen h-screen justify-evenly content-around flex flex-col items-center text-center">
-	<h1 class="font-extrabold text-body drop-shadow-lg text-9xl text-white">cepi<span class="text-black">.</span>world</h1>
+	<h1
+		class="font-extrabold text-body drop-shadow-lg text-9xl text-white"
+		on:click={() => copyText("cepi.world")}
+	>cepi.world</h1>
+	<p class="bg-white text-black px-4 py-2 rounded-xl shadow-lg drop-shadow-lg">
+		<span on:click={() => copyText("build.cepi.world")}>build.cepi.world</span>
+		|
+		<span on:click={() => copyText("dev.cepi.world")}>dev.cepi.world</span>
+	</p>
 	<iframe title="Cepi Trailer" class="h-1/2 aspect-video rounded-lg shadow-lg border-8 border-white" src="https://www.youtube.com/embed/2VJqyIaiUD8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	<div id="socials" class="flex h-12">
 		{#each socialLinks as {url, component}}
