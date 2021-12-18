@@ -58,6 +58,7 @@
 		on:click={() => copyText("cepi.world")}
 	>cepi.world</h1>
 	<p class="bg-white text-black px-4 py-2 rounded-xl shadow-lg drop-shadow-lg">
+		<span>The Minecraft MMORPG | </span>
 		<span on:click={() => copyText("build.cepi.world")}>build.cepi.world</span>
 		|
 		<span on:click={() => copyText("dev.cepi.world")}>dev.cepi.world</span>
